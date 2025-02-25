@@ -7,9 +7,9 @@ app.use(cors());
 app.use(express.json());
 
 const users = [
-    { id: 1, name: "Anna", age: 25, city: "Warszawa", photo: "https://randomuser.me/api/portraits/women/1.jpg" },
-    { id: 2, name: "Tomek", age: 28, city: "Kraków", photo: "https://randomuser.me/api/portraits/men/1.jpg" },
-    { id: 3, name: "Ewa", age: 23, city: "Gdańsk", photo: "https://randomuser.me/api/portraits/women/2.jpg" }
+    { id: 1, name: "Katie", age: 22, city: "Lublin", photo: "https://randomuser.me/api/portraits/women/1.jpg" },
+    { id: 2, name: "Jacob", age: 23, city: "Chelm", photo: "https://randomuser.me/api/portraits/men/1.jpg" },
+    { id: 3, name: "Eva", age: 23, city: "Tiruriru", photo: "https://randomuser.me/api/portraits/women/2.jpg" }
 ];
 
 app.get("/users",(req,res)=>{
@@ -17,5 +17,5 @@ app.get("/users",(req,res)=>{
 })
 
 app.listen(PORT, ()=>{
-    console.log("server runing")
+    console.log("server is runing")
 })
